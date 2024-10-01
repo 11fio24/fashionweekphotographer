@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(23, 26, 70);
+    font-size: 30px;
+    color: rgb(246, 248, 225);
+    font-family:Copperplate, Papyrus, fantasy;
+    text-align: center;
+}
+
+h1{
+    font-size: 120px;
+    font-family: Garamond (serif);
+    color: rgb(246, 248, 225);
+    text-transform: uppercase;
+    text-align:start;
+ul{
+    list-style-type: none;
+}
+div{
+
+}
