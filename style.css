@@ -75,3 +75,28 @@ body {
     object-fit: cover; /* Keeps the image aspect ratio */
     max-width: 100%; /* Prevent image overflow */
 }
+
+.see-more {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.more-images-section {
+    padding: 40px 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust columns based on design */
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}

@@ -98,6 +98,31 @@
             object-fit: cover; /* Keep the aspect ratio */
             max-width: 100%; /* Prevent image overflow */
         }
+        .see-more {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .more-images-section {
+            padding: 40px 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Adjust columns based on design */
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -131,24 +156,20 @@
             <img src="popular-item.jpg" class="clickable-image" alt="Popular Item">
         </div>
     </div>
-    <div class="sale-section">
-        <h3>Sale</h3>
-        <div class="sale-item">
-            <img src="sale-item.jpg" class="clickable-image" alt="Sale Item">
-        </div>
-    </div>
+
 </section>
 
 <!-- New Section for More Images -->
 <section id="more-images" class="more-images-section">
     <h3>More Images</h3>
     <div class="image-grid">
-        <img src="more-image1.jpg" alt="More Image 1">
-        <img src="more-image2.jpg" alt="More Image 2">
-        <img src="more-image3.jpg" alt="More Image 3">
-        <img src="more-image4.jpg" alt="More Image 4">
+        <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1321.jpg?v=1729614273464" alt="More Image 1">
+        <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1360.jpg?v=1729614284691" alt="More Image 2">
+        <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1369.jpg?v=1729614290213" alt="More Image 3">
+        <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1296.jpg?v=1729614271665" alt="More Image 4">
         <!-- Add more images as needed -->
     </div>
+  
 </section>
 
   
