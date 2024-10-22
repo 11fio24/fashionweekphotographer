@@ -103,7 +103,7 @@
             margin: 20px 0;
             padding: 10px 20px;
             background-color: white;
-            color: #fff;
+            color: black;
             text-align: center;
             text-decoration: none;
         }
@@ -111,13 +111,14 @@
         .more-images-section {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 20px;
+    gap: 100px;
     padding: 40px;
+    background:#black;
 }
 
       .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust columns based on design */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
 }
 
@@ -136,27 +137,49 @@
     align-items: center;
 }
 
-    .hero-image img {
+    .hero-image-container {
+    position: relative;
     width: 100%;
-    height: auto;
+    max-width: 800px; 
+    margin: 0 auto;
 }
 
-      .hero-text {
+.hero-image {
+    width: 100%;
+    height: 100;
+    display: block;
+}
+
+.overlay-text {
     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-text {
+    margin: 20px 0 0 0; 
+    font-size: 100px; 
     color: white;
-    font-size: 48px; /* Adjust size based on your preference */
+    font-family: "Your Font Here", serif; 
     text-align: center;
-    font-family: "Your Font Here", serif; /* Use an elegant font */
-    top: 40%;
 }
 
-    .hero-text h1 {
-    margin: 0;
-    line-height: 1.2;
+.bottom-text {
+    margin: 0 0 20px 0; 
+    font-size: 100px; 
+    color: white;
+    font-family: "Your Font Here", serif; 
+    text-align: center;
 }
 
+
       
-      
+    
 
     </style>
 </head>
@@ -196,12 +219,15 @@
         <!-- Add more as needed -->
     </div>
 
-    <div class="hero-image">
-        <img src="hhttps://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6320.jpeg?v=1729614397570" alt="Hero Image">
-        <div class="hero-text">
-            <h1>Sex For Breakfast</h1>
-        </div>
+   
+      <div class="hero-image-container">
+    <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6320.jpeg?v=1729614397570" alt="Fashion Week Image" class="hero-image">
+    <div class="overlay-text">
+        <h1 class="top-text">FASHION</h1>
+        <h1 class="bottom-text">WEEK</h1>
     </div>
+</div>
+
     </section>
  
   
