@@ -31,29 +31,27 @@
             color: white;
         }
 
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 3fr;
-            gap: 20px;
-            padding: 0;
-            background-color: white;
-        }
+      .main-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Adjust this if needed for different ratios */
+    gap: 0;
+    padding: 0;
+    height: calc(100vh - 70px); /* Set a larger height, or you can use a specific height in px or % */
+    background-color: white;
+}
 
-        .text-box {
-            padding: 40px 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+.text-box {
+    padding: 60px 30px; /* Increase padding for a larger area */
+}
 
-        .text-box h1 {
-            font-size: 40px;
-            line-height: 1.2;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: black;
-            font-family: "Verdana", sans-serif;
-        }
+.text-box h1 {
+    font-size: 48px; /* Increase font size to match a larger section */
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+    font-family: "Verdana", sans-serif;
+}
 
         .text-box .star {
             color: #39ff14; 
@@ -211,7 +209,7 @@
         .top-text,
         .bottom-text {
             margin: 0;
-            font-size: 50px; /* Adjust font size as needed */
+            font-size: 100px; 
             color: white;
             font-family: "Verdana", sans-serif;
             text-align: center;
@@ -224,7 +222,26 @@
         .bottom-text {
             margin-bottom: 20px;
         }
-      .
+      .grateful-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: black; 
+    color: white;
+    height: 80px; 
+    padding: 20px;
+    text-align: center;
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+}
+
+
+
     </style>
 </head>
 <body>
@@ -274,13 +291,13 @@
     <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_0117.JPG?v=17296143179327" alt="New Default Image" class="default-image">
     <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_0116.JPG?v=1729614312787" alt="New Hover Image" class="hover-image">
 </div>
- <!-- 新的悬停图像切换效果 -->
+
 <div class="grid-item hover-image-container">
     <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_0118.JPG?v=1729614323312" alt="New Default Image" class="default-image">
     <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_0119.JPG?v=1729614328522" alt="New Hover Image" class="hover-image">
 </div>
 
-<!-- 新的文本覆盖效果 -->
+
 <div class="grid-item text-overlay-container">
     <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6314.jpeg?v=1729614377788" alt="Image with New Text Overlay">
     <div class="overlay-text-box">
@@ -297,10 +314,16 @@
                 <h1 class="bottom-text">WEEK</h1>
             </div>
         </div>
-      <div>
-        <h1>
-      I am grateful for this opportunity and thank everyone who was there, Ｔhe photographers, Models and the Designers.        </h1>
-      </div>
+     
+<section id="more-images" class="more-images-section">
+   
+</section>
+
+
+<div class="grateful-text">
+    <p>I am grateful for this opportunity and thank everyone who was there, the photographers, models, and designers.</p>
+</div>
+
     </section>
 </body>
 </html>
