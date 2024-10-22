@@ -33,10 +33,9 @@
 
         .main-content {
             display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 0;
+            grid-template-columns: 2fr 3fr;
+            gap: 20px;
             padding: 0;
-            height: calc(100vh - 70px);
             background-color: white;
         }
 
@@ -91,14 +90,14 @@
         .more-images-section {
             padding: 20px;
             display: grid;
-            grid-template-columns: 2fr 3fr; /* 2/3 split for smaller images and hero image */
+            grid-template-columns: 2fr 3fr;
             gap: 20px;
         }
 
         .image-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller images */
-            grid-template-rows: repeat(3, 1fr); /* 3 rows for smaller images (六宮格) */
+            grid-template-rows: repeat(2, 1fr); /* 2 rows for smaller images (四宮格) */
             gap: 10px; /* Space between images */
         }
 
@@ -186,7 +185,7 @@
         .hero-image-container {
             position: relative;
             width: 100%;
-            height: 100%;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -245,7 +244,7 @@
         </div>
     </div>
 
-    <!-- Image section part -->
+    <!-- Image section part - Layout and Interactions -->
     <section id="more-images" class="more-images-section">
         <div class="image-grid">
             <!-- Interaction 1: Hover to show another image -->
@@ -253,25 +252,21 @@
                 <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1321.jpg?v=1729614273464" alt="Default Image 1" class="default-image">
                 <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_0113.JPG?v=1729614303570" alt="Hover Image 1" class="hover-image">
             </div>
-         
 
             <!-- Interaction 2: Hover to show text story -->
             <div class="grid-item text-overlay-container">
-                <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1296.jpg?v=1729614271665" alt="Image with Text Overlay">
+                <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1369.jpg?v=1729614290213" alt="Image with Text Overlay">
                 <div class="overlay-text-box">
-                    <p>It was my first time to participate in such a grand fashion show and I was actually very nervous. I admit that I didn't shoot very well. But I think it's a great, great experience that I treasure very much.</p>
+                    <p>It was my first time to participate in such a grand fashion show and I was actually very nervous. I admit that I didn't shoot very well. But I think it's a great, great experience that I treasure very much..</p>
                 </div>
             </div>
 
-            <!-- add image here-->
+            <!-- Additional static images -->
             <div class="grid-item">
                 <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1296.jpg?v=1729614271665" alt="Image 3">
             </div>
             <div class="grid-item">
                 <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1321.jpg?v=1729614273464" alt="Image 4">
-            </div>
-            <div class="grid-item">
-                <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1360.jpg?v=1729614284691" alt="Image 5">
             </div>
         </div>
 
