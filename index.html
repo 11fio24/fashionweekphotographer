@@ -3,8 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>My Backstage Photography Experience</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Change to match the reference image background */
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            background-color: black;
+        }
+
+        .top-bar {
+            background-color: #a200a2; /* Purple */
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns:1fr 1.5fr;
+            gap: 0;
+            padding: 0;
+            height: calc(100vh - 70px);
+            background-color: white;
+        }
+
+        .text-box {
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-box h1 {
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .text-box .star {
+            color: #39ff14; /* Use your preferred color for stars */
+        }
+
+        .read-more {
+            border: 2px solid #000;
+            background-color: transparent;
+            color: #000;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding: 0; /* Make it compact */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%; /* Maintain the height */
+            object-fit: cover; /* Keep the aspect ratio */
+            max-width: 100%; /* Prevent image overflow */
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -19,10 +111,10 @@
     <div class="main-content">
         <div class="text-box">
             <h1>NYFW IS <span class="star">✶</span> ALMOST HERE, 50 MODELS FOR CHANGE, JACQUEMUS' NEW BOOK, AND MORE OF THE NEWS YOU MISSED <span class="star">✶</span></h1>
-            <button class="SEE MORE">MORE</button>
+            <button class="read-more">Read More</button>
         </div>
         <div class="image-container">
-            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6331.jpeg?v=1729614428171" alt="Backstage Photography Experience">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/Screenshot%202024-10-06%20at%201.20.08%E2%80%AFAM.png?v=1729614439142" alt="Backstage Photography Experience">
         </div>
     </div>
 </body>
