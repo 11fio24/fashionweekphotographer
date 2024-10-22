@@ -33,7 +33,7 @@
 
         .main-content {
             display: grid;
-            grid-template-columns: 2fr 3fr;
+            grid-template-columns: 1fr 3fr;
             gap: 0;
             padding: 0;
             height: calc(100vh - 70px);
@@ -71,6 +71,22 @@
             align-self: flex-start;
         }
 
+        /* Top hero image section */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding: 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            max-width: 90%;
+        }
+
         /* Image section styles */
         .more-images-section {
             padding: 20px;
@@ -94,73 +110,97 @@
             transition: opacity 0.3s ease-in-out;
         }
 
-        /* Interaction 1: Show another image on hover */
-        .hover-image-container {
-            position: relative;
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
+        /* Image section styles */
+.more-images-section {
+    padding: 20px;
+}
 
-        .hover-image-container .default-image {
-            width: 100%;
-            transition: opacity 0.5s ease-in-out;
-        }
+.image-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* Vertical grid layout for multiple images */
+    gap: 15px; /* Space between images */
+}
 
-        .hover-image-container .hover-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
 
-        .hover-image-container:hover .hover-image {
-            opacity: 1;
-        }
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
 
-        .hover-image-container:hover .default-image {
-            opacity: 0;
-        }
+/* Interaction 1: Show another image on hover */
+.hover-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 
-        /* Interaction 2: Show text story on hover */
-        .text-overlay-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+.hover-image-container .default-image {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
 
-        .text-overlay-container img {
-            width: 100%;
-            transition: opacity 0.5s ease-in-out;
-        }
+.hover-image-container .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
-        .text-overlay-container .overlay-text-box {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
+.hover-image-container:hover .hover-image {
+    opacity: 1;
+}
 
-        .text-overlay-container:hover .overlay-text-box {
-            opacity: 1;
-        }
+.hover-image-container:hover .default-image {
+    opacity: 0;
+}
 
-        .text-overlay-container:hover img {
-            opacity: 0;
-        }
+/* Interaction 2: Show text story on hover */
+.text-overlay-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-overlay-container img {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text-overlay-container .overlay-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text-overlay-container:hover .overlay-text-box {
+    opacity: 1;
+}
+
+.text-overlay-container:hover img {
+    opacity: 0;
+}
+
 
         /* Hero Image on the right */
         .hero-image-container {
@@ -187,32 +227,39 @@
     </header>
     
     <div class="main-content">
-        <div class="more-images-section">
-            <div class="image-grid">
-                <!-- Interaction 1: Hover to show another image -->
-                <div class="grid-item hover-image-container">
-                    <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1321.jpg?v=1729614273464" alt="Default Image 1" class="default-image">
-                    <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1360.jpg?v=1729614284691" alt="Hover Image 1" class="hover-image">
-                </div>
+        <div class="text-box">
+            <h1>NYFW RUNWAY 7 <span class="star">✶</span> MY FIRST TIME BEING PHOTOGRAPHER AT FASHION SHOW BACKSTAGE <span class="star">✶</span></h1>
+            
+            <a href="#more-images" class="see-more">See More</a>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6301%20(1).jpeg?v=1729614339703" alt="Backstage Photography Experience">
+        </div>
+    </div>
 
-                <!-- Interaction 2: Hover to show text story -->
-                <div class="grid-item text-overlay-container">
-                    <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1369.jpg?v=1729614290213" alt="Image with Text Overlay">
-                    <div class="overlay-text-box">
-                        <p>This is a story about this photo. Customize the text as needed.</p>
-                    </div>
-                </div>
+   <!-- Image section part - Layout and Interactions -->
+<section id="more-images" class="more-images-section">
+    <div class="image-grid">
+        <!-- Interaction 1: Hover to show another image -->
+        <div class="grid-item hover-image-container">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1321.jpg?v=1729614273464" alt="Default Image 1" class="default-image">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1360.jpg?v=1729614284691" alt="Hover Image 1" class="hover-image">
+        </div>
 
-                <!-- Additional static images -->
-                <div class="grid-item">
-                    <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1296.jpg?v=1729614271665" alt="Image 3">
-                </div>
+        <!-- Interaction 2: Hover to show text story -->
+        <div class="grid-item text-overlay-container">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1369.jpg?v=1729614290213" alt="Image with Text Overlay">
+            <div class="overlay-text-box">
+                <p>This is a story about this photo. Customize the text as needed.</p>
             </div>
         </div>
 
-        <div class="hero-image-container">
-            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/IMG_6320.jpeg?v=1729614397570" alt="Fashion Week Image" class="hero-image">
+        <!-- Additional static images -->
+        <div class="grid-item">
+            <img src="https://cdn.glitch.global/0c5b81da-33df-4e5d-8000-d0c806ec968b/DSCF1296.jpg?v=1729614271665" alt="Image 3">
         </div>
     </div>
+</section>
+
 </body>
 </html>
