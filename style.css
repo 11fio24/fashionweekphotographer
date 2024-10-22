@@ -8,10 +8,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
-    position: relative;
+    width: 100%;
     background-color: #222;
 }
 
@@ -40,32 +43,48 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    width: 80%; /* Center the content and control width */
 }
 
-.headline h1 {
-    font-size: 24px;
+.text-box {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.headline p {
-    margin-top: 10px;
-    font-size: 16px;
+.text-box h1 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.text-box .star {
+    color: #39ff14; /* Use your preferred color for stars */
+}
+
+.read-more {
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container img {
-    width: 100%;
+    width: 100%; /* Adjust the width to fit the container */
     height: auto;
-}
-
-.highlight {
-    background-color: #39ff14;
-    padding: 10px;
-    color: #111;
-}
-
-.highlight-text h2 {
-    font-size: 18px;
-}
-
-.highlight-text p {
-    font-size: 14px;
+    object-fit: cover; /* Keeps the image aspect ratio */
+    max-width: 100%; /* Prevent image overflow */
 }
