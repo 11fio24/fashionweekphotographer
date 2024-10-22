@@ -100,3 +100,49 @@ body {
     width: 100%;
     height: auto;
 }
+.more-images-section {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust columns based on design */
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    color: white;
+    font-size: 48px; /* Adjust size based on your preference */
+    text-align: center;
+    font-family: "Your Font Here", serif; /* Use an elegant font */
+    top: 40%;
+}
+
+.hero-text h1 {
+    margin: 0;
+    line-height: 1.2;
+}
